@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>guessing game</title>
+
+    <!-- Bootstrap and CSS here-->
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+
+      <div id='app'  class="center container">
+
+        <div id='headers'>
+            <h1 id="title">play the guessing game!</h1>
+            <h3 id="subtitle">guess a number between 1&ndash;100</h3>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id="player-input" class="center" type="number" maxlength = "3" placeholder="#" autofocus=autofocus/></input>
+            <button class="btn btn-large" id="submit">Go!</button>
+          </div>
+
+          <div id='guesses'>
+           <ul id="guess-list">
+            <!-- unordered list of guesses -->
+             <li class="guess">...</li>
+             <li class="guess">...</li>
+             <li class="guess">...</li>
+             <li class="guess">...</li>
+             <li class="guess">...</li>
+           </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button id="reset" class="btn btn-large" >Reset</button>
+            <button class="btn btn-large" id="hint">Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class="center">
+
+        <div class="row">
+
+          <div class= "col-sm-4">
+            <img src='img/fa-logo@2x.png'></img>
+          </div>
+
+          <div class="col-sm-4">
+            <h4>project by jsk</h4>
+          </div>
+
+          <div class="col-sm-4">
+            <img src='img/grace_hopper_academy.png'></img>
+          </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="js/GuessingGame.js"></script>
+
+
+  </body>
+</html>
